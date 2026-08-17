@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portofolio pribadi Adam — UI/UX designer dan web developer yang fokus pada pengalaman digital yang modern, profesional, dan user-friendly."
+    />
+    <title>Adam Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwUEQpD1emQF9Wz7KzK5Y5o7oV7V9XvMO6Xr7R7M4q9cW0Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="home">
+      <nav class="navbar container">
+        <a class="brand" href="#home" aria-label="Beranda">
+          <span class="brand-mark">A</span>
+          <span class="brand-text">Adam</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon icon-moon"></i>
+            <i class="fa-solid fa-sun icon-sun"></i>
+          </button>
+
+          <div class="nav-links">
+            <a href="#about">Tentang</a>
+            <a href="#skills">Skill</a>
+            <a href="#projects">Proyek</a>
+            <a href="#experience">Pengalaman</a>
+            <a href="#contact" class="button button-primary nav-button">Hubungi</a>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero container">
+        <div class="hero-copy reveal parallax-item" data-speed="0.12">
+          <p class="eyebrow">Photographer • Visual Designer • Storyteller</p>
+          <h1>
+            Adam creates <span>quiet luxury</span><br />
+            in every frame and interface.
+          </h1>
+          <p class="lead">
+            Saya menciptakan identitas visual, fotografi, dan pengalaman digital yang elegan,
+            minimal, dan berkesan—untuk brand yang ingin terlihat premium tanpa berisik.
+          </p>
+
+          <div class="cta-group">
+            <a class="button button-primary" href="#projects">Lihat Proyek</a>
+            <a class="button button-secondary" href="#contact">Chat Saya</a>
+          </div>
+
+          <div class="social-links" aria-label="Media sosial">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal parallax-item" data-speed="-0.18">
+          <div class="profile-card">
+            <div class="image-wrap">
+              <img
+                src="profil.jpg"
+                alt="Potret Adam"
+              />
+            </div>
+            <div class="card-badge badge-top">Available for freelance</div>
+            <div class="stats-card">
+              <div>
+                <strong>5+</strong>
+                <span>Tahun pengalaman</span>
+              </div>
+              <div>
+                <strong>30+</strong>
+                <span>Proyek selesai</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section section-about" id="about">
+        <div class="container split-layout">
+          <div class="section-heading reveal">
+            <p class="section-tag">Tentang Saya</p>
+            <h2>Menangkap emosi, lalu merangkainya menjadi tampilan yang elegan.</h2>
+          </div>
+
+          <div class="about-content reveal">
+            <p>
+              Saya Adam, seorang photographer dan visual designer yang bekerja di antara gambar,
+              identitas, dan pengalaman digital. Saya senang membangun karya yang terasa tenang,
+              terarah, dan memiliki karakter yang kuat.
+            </p>
+            <p>
+              Dari fotografi brand, visual storytelling, hingga desain website, saya membantu bisnis
+              dan individu menampilkan nilai mereka dengan cara yang lebih terlihat dan lebih hidup.
+            </p>
+
+            <div class="mini-stats">
+              <div>
+                <strong>8+</strong>
+                <span>Brand yang dibantu</span>
+              </div>
+              <div>
+                <strong>12+</strong>
+                <span>Website aktif</span>
+              </div>
+              <div>
+                <strong>4</strong>
+                <span>Bahasa & stack</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-skills" id="skills">
+        <div class="container">
+          <div class="center-heading reveal">
+            <p class="section-tag">Skill</p>
+            <h2>Keahlian yang saya bawa ke setiap cerita visual</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <div class="icon"><i class="fa-solid fa-pen-ruler"></i></div>
+              <h3>Visual Design</h3>
+              <ul>
+                <li>Brand identity</li>
+                <li>Creative direction</li>
+                <li>Editorial design</li>
+                <li>Art direction</li>
+              </ul>
+            </div>
+
+            <div class="skill-card reveal delay-1">
+              <div class="icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Digital Craft</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive portfolio</li>
+              </ul>
+            </div>
+
+            <div class="skill-card reveal delay-2">
+              <div class="icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+              <h3>Photography</h3>
+              <ul>
+                <li>Portrait</li>
+                <li>Brand imagery</li>
+                <li>Editorial frames</li>
+                <li>Visual storytelling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-projects" id="projects">
+        <div class="container">
+          <div class="project-head reveal">
+            <div>
+              <p class="section-tag">Proyek</p>
+              <h2>Selected work for brands, stories, and spaces</h2>
+            </div>
+            <a href="#contact" class="text-link">Minta project serupa</a>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card-featured reveal">
+              <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                alt="Project digital marketing"
+              />
+              <div class="project-overlay">
+                <span class="project-tag">Brand Story</span>
+                <h3>Campaign Landing Page</h3>
+                <p>Luxury digital storytelling for a modern brand experience.</p>
+              </div>
+            </article>
+
+            <article class="project-card reveal delay-1">
+              <img
+                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+                alt="Project dashboard app"
+              />
+              <div class="project-overlay compact">
+                <span class="project-tag">Editorial</span>
+                <h3>Creative Dashboard</h3>
+                <p>Data made elegant, useful, and visually calm.</p>
+              </div>
+            </article>
+
+            <article class="project-card project-card-tall reveal delay-2">
+              <img
+                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
+                alt="Project portfolio website"
+              />
+              <div class="project-overlay compact">
+                <span class="project-tag">Portfolio</span>
+                <h3>Personal Portfolio</h3>
+                <p>Premium identity crafted for a refined personal brand.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-experience" id="experience">
+        <div class="container">
+          <div class="center-heading reveal">
+            <p class="section-tag">Pengalaman</p>
+            <h2>How I build refined visual work</h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <span class="timeline-year">2024</span>
+              <div class="timeline-content">
+                <h3>Senior UI Designer</h3>
+                <p>Mengembangkan sistem desain yang konsisten untuk produk digital dan membantu tim product menjaga kualitas visual.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal delay-1">
+              <span class="timeline-year">2022</span>
+              <div class="timeline-content">
+                <h3>Front-End Developer</h3>
+                <p>Membangun website responsif, landing page, dan antarmuka yang cepat, rapi, serta nyaman digunakan.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item reveal delay-2">
+              <span class="timeline-year">2020</span>
+              <div class="timeline-content">
+                <h3>Graphic Designer</h3>
+                <p>Merancang branding, promosi, dan materi visual untuk kebutuhan bisnis serta personal brand.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact">
+        <div class="container contact-wrap">
+          <div class="contact-copy reveal">
+            <p class="section-tag light">Hubungi</p>
+            <h2>Siap membuat visual yang terasa premium dan berkesan?</h2>
+            <p>
+              Saya terbuka untuk kolaborasi dalam branding, fotografi komersial, desain visual, dan pengembangan website dengan gaya yang minimal dan elegan.
+            </p>
+            <ul>
+              <li><i class="fa-solid fa-envelope"></i> adam.portfolio@email.com</li>
+              <li><i class="fa-solid fa-location-dot"></i> Gorontalo, Indonesia</li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal">
+            <div class="field-group">
+              <label for="name">Nama</label>
+              <input id="name" name="name" type="text" placeholder="Nama Anda" />
+            </div>
+            <div class="field-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="email@contoh.com" />
+            </div>
+            <div class="field-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ceritakan kebutuhan Anda..."></textarea>
+            </div>
+            <button class="button button-primary" type="submit">
+              <span>Kirim Pesan</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Adam Portfolio</p>
+        <div class="footer-links">
+          <a href="#about">Tentang</a>
+          <a href="#projects">Proyek</a>
+          <a href="#contact">Kontak</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
