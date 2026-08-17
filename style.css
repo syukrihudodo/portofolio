@@ -1,18 +1,20 @@
 :root {
-  --bg: #f7f3ee;
-  --bg-strong: #efe7df;
-  --surface: #fffdfb;
-  --surface-soft: #f1e7dd;
+  --bg: #f5f1ee;
+  --bg-strong: #ece4df;
+  --surface: #fffdfc;
+  --surface-soft: #f2edea;
   --surface-elevated: rgba(255, 255, 255, 0.8);
-  --primary: #b38a63;
-  --primary-dark: #8f6a45;
-  --primary-soft: rgba(179, 138, 99, 0.14);
-  --secondary: #2f2a28;
-  --text: #171311;
-  --text-soft: #524b46;
-  --muted: #7b726b;
-  --border: rgba(23, 19, 17, 0.08);
-  --shadow: 0 24px 50px rgba(28, 22, 18, 0.08);
+  --primary: #1f2d5d;
+  --primary-dark: #162448;
+  --primary-soft: rgba(31, 45, 93, 0.12);
+  --accent: #cf3d3d;
+  --accent-soft: rgba(207, 61, 61, 0.12);
+  --secondary: #101827;
+  --text: #171b2a;
+  --text-soft: #4f5a72;
+  --muted: #6f7a8b;
+  --border: rgba(23, 29, 45, 0.08);
+  --shadow: 0 24px 50px rgba(26, 35, 62, 0.08);
   --radius-lg: 30px;
   --radius-md: 18px;
   --radius-sm: 12px;
@@ -20,20 +22,22 @@
 }
 
 body.dark-mode {
-  --bg: #141210;
-  --bg-strong: #1d1a18;
-  --surface: #1d1a18;
-  --surface-soft: #251f1d;
-  --surface-elevated: rgba(29, 26, 24, 0.85);
-  --primary: #d5b08c;
-  --primary-dark: #f0c79e;
-  --primary-soft: rgba(213, 176, 140, 0.12);
-  --secondary: #eae0d6;
-  --text: #f3eee9;
-  --text-soft: #d9cdc2;
-  --muted: #bcaea2;
-  --border: rgba(255, 255, 255, 0.07);
-  --shadow: 0 28px 60px rgba(0, 0, 0, 0.45);
+  --bg: #0d1526;
+  --bg-strong: #111d2f;
+  --surface: #111c2e;
+  --surface-soft: #16243d;
+  --surface-elevated: rgba(17, 28, 46, 0.86);
+  --primary: #b9c7ff;
+  --primary-dark: #dfe7ff;
+  --primary-soft: rgba(185, 199, 255, 0.12);
+  --accent: #f06a6a;
+  --accent-soft: rgba(240, 106, 106, 0.12);
+  --secondary: #edf3ff;
+  --text: #edf3ff;
+  --text-soft: #c5d3ef;
+  --muted: #a5b6d8;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: 0 28px 60px rgba(2, 8, 20, 0.5);
 }
 
 * {
@@ -137,42 +141,42 @@ p {
 }
 
 .button-primary {
-  background: linear-gradient(135deg, var(--primary), #d4b08a);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   color: #fff;
-  box-shadow: 0 18px 30px rgba(179, 138, 99, 0.22);
+  box-shadow: 0 18px 30px rgba(31, 45, 93, 0.2);
 }
 
 .button-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 24px 34px rgba(179, 138, 99, 0.28);
+  box-shadow: 0 24px 34px rgba(31, 45, 93, 0.26);
 }
 
 .button-secondary {
   background: rgba(255, 255, 255, 0.7);
-  border-color: rgba(23, 19, 17, 0.08);
+  border-color: rgba(23, 29, 45, 0.1);
   color: var(--text);
   backdrop-filter: blur(8px);
 }
 
 .button-secondary:hover {
   background: rgba(255, 255, 255, 0.95);
-  border-color: rgba(179, 138, 99, 0.2);
+  border-color: rgba(31, 45, 93, 0.2);
   transform: translateY(-2px);
 }
 
 body.dark-mode .button-primary {
-  box-shadow: 0 18px 32px rgba(213, 176, 140, 0.2);
+  box-shadow: 0 18px 32px rgba(185, 199, 255, 0.18);
 }
 
 body.dark-mode .button-secondary {
-  background: rgba(51, 42, 35, 0.9);
-  border-color: rgba(213, 176, 140, 0.18);
-  color: #f6efe8;
+  background: rgba(18, 28, 43, 0.9);
+  border-color: rgba(185, 199, 255, 0.18);
+  color: #edf3ff;
 }
 
 body.dark-mode .button-secondary:hover {
-  background: rgba(68, 57, 49, 0.98);
-  border-color: rgba(213, 176, 140, 0.35);
+  background: rgba(27, 39, 59, 0.98);
+  border-color: rgba(185, 199, 255, 0.3);
 }
 
 .site-header {
@@ -267,15 +271,14 @@ body.dark-mode .theme-toggle .icon-sun {
 }
 
 .brand-mark {
-  width: 2.4rem;
-  height: 2.4rem;
-  border-radius: 12px;
-  display: grid;
-  place-items: center;
-  font-weight: 800;
-  color: #fff;
-  background: linear-gradient(135deg, var(--primary), #d4b08a);
-  box-shadow: 0 15px 30px rgba(179, 138, 99, 0.18);
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 24px rgba(31, 45, 93, 0.18);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
 }
 
 .brand-text {
@@ -301,7 +304,7 @@ body.dark-mode .theme-toggle .icon-sun {
 
 .nav-links a:hover {
   color: var(--primary);
-  background: rgba(179, 138, 99, 0.08);
+  background: rgba(31, 45, 93, 0.08);
   transform: translateY(-1px);
 }
 
@@ -737,7 +740,7 @@ body.dark-mode .timeline-content p {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: #f3e9dd;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(31, 45, 93, 0.28);
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 999px;
   padding: 0.48rem 0.8rem;
